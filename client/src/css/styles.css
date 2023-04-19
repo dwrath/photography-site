@@ -45,37 +45,18 @@ body{
 .title-paragraph{
     font-weight: 100;
 }
-/*.carousel-container {*/
-/*    width: 1000px;*/
-/*    height: 300px;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*.carousel-container ul {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    width: 1500px;*/
-/*    list-style: none;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    gap: 10px;*/
-/*}*/
-/*.carousel-container ul li {*/
-/*    width: calc(1000px / 3);*/
-/*}*/
 .ticker-tape {
     display: flex;
-    overflow: hidden;
-    height: 150px;
+    height: 400px;
+    transform: translateX(0px);
 }
 
 .ticker-tape img {
     height: 100%;
     width: auto;
     margin-right: 50px;
-    transition: transform 10s linear;
+    transition: transform .5s ease-in;
 }
-
-.ticker-tape img.active {
-    transform: translateX(-100%);
+.ticker-container{
+    overflow: hidden;
 }

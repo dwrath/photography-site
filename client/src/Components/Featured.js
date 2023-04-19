@@ -4,28 +4,35 @@ const images = [
     { url: heroImg, alt: 'Image 1' },
     { url: heroImg, alt: 'Image 2' },
     { url: heroImg, alt: 'Image 3' },
+    { url: heroImg, alt: 'Image 4' },
+    { url: heroImg, alt: 'Image 5' },
 ];
 
 const Featured = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [translateX, setTranslateX] = useState(0);
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentIndex((currentIndex + 1) % images.length);
-        }, 3000);
+        const intervalId = setInterval(() => {
+            setTranslateX(prevTranslateX => {
+                if (prevTranslateX <= -2000) {
+                    return 0;
+                } else {
+                    return prevTranslateX - 1;
+                }
+            });
+        }, 20);
 
-        return () => clearInterval(timer);
-    }, [currentIndex]);
+        return () => clearInterval(intervalId);
+    }, []);
 
     return (
     <div className="container justify-center">
         <div className="row">
-            <div className="column align-center">
-                <div className="ticker-tape">
+            <div className="column align-center ticker-container">
+                <div className="ticker-tape" style={{ transform: `translateX(${translateX}px)`}}>
                     {images.map((image, index) => (
                         <img
                             key={index}
-                            className={index === currentIndex ? 'active' : ''}
                             src={image.url}
                             alt={image.alt}
                         />
