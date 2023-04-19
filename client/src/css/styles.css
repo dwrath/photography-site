@@ -31,14 +31,51 @@ body{
     width: 400px;
 }
 .hero-img{
-    height: 600px;
-    width: 400px;
+    height: 300px;
+    width: 450px;
     object-fit: cover;
 }
 .hero-title{
     font-size: 100px;
     font-weight: 100;
 }
+.hero-margin{
+    margin-top: 300px;
+}
 .title-paragraph{
     font-weight: 100;
+}
+/*.carousel-container {*/
+/*    width: 1000px;*/
+/*    height: 300px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.carousel-container ul {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    width: 1500px;*/
+/*    list-style: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    gap: 10px;*/
+/*}*/
+/*.carousel-container ul li {*/
+/*    width: calc(1000px / 3);*/
+/*}*/
+.ticker-tape {
+    display: flex;
+    overflow: hidden;
+    height: 150px;
+}
+
+.ticker-tape img {
+    height: 100%;
+    width: auto;
+    margin-right: 50px;
+    transition: transform 10s linear;
+}
+
+.ticker-tape img.active {
+    transform: translateX(-100%);
 }

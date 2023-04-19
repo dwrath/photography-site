@@ -9,7 +9,6 @@ function Navbar() {
                         <div className="column shrink"><a href="#" title="About">About</a></div>
                         <div className="column shrink"><a href="#" title="Our Team">Our Team</a></div>
                         <div className="column shrink"><a href="#">Contact</a></div>
-
                     </nav>
                 </div>
                 <div className="column shrink">
