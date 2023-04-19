@@ -60,3 +60,13 @@ body{
 .ticker-container{
     overflow: hidden;
 }
+.photography-service, .videography-service, .both-service{
+    width: 300px;
+    height: 200px;
+    background-color: #181716;
+    padding: 20px;
+}
+.photography-heading, .videography-heading, .both-heading{
+    font-size: 20px;
+    font-weight: 100;
+}

@@ -4,6 +4,7 @@ import './css/styles.css';
 import Navbar from "./Components/Navbar";
 import HeroScene from "./Components/HeroScene";
 import Carousel from "./Components/Featured";
+import Services from './Components/Services';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
         <HeroScene/>
         <Carousel/>
+      <Services/>
     </div>
   );
 }
