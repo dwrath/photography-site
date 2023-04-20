@@ -59,14 +59,26 @@ body{
 }
 .ticker-container{
     overflow: hidden;
+    border: 1px solid #AF9A50;
+    border-radius: 10px;
 }
+
 .photography-service, .videography-service, .both-service{
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     background-color: #181716;
     padding: 20px;
+    border: 1px solid rgba(175, 154,80, 0.5);
+    /*box-shadow: ;*/
 }
 .photography-heading, .videography-heading, .both-heading{
     font-size: 20px;
     font-weight: 100;
+}
+.services-spacing{
+    margin-top: 30px;
+}
+.services-gap{
+    margin-left: -70px;
+    gap: 30px;
 }
