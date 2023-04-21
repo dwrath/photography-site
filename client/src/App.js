@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import HeroScene from "./Components/HeroScene";
 import Carousel from "./Components/Featured";
 import Services from './Components/Services';
+import Work from "./Components/Work";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <HeroScene/>
         <Carousel/>
       <Services/>
+        <Work/>
     </div>
   );
 }
