@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
 body{
-    background-color: black;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #AF9A50;
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,6 +15,7 @@ body{
 }
 .nav-overlay{
     position: relative;
+    z-index: 3;
 }
 .nav-positioning{
     position: fixed;
@@ -52,15 +56,20 @@ body{
 }
 
 .ticker-tape img {
-    height: 100%;
+    height: 95%;
     width: auto;
     margin-right: 50px;
+    margin-top: 10px;
+    box-shadow: 5px 3px 3px rgba(0,0,0,.3);
+    border: 1px solid #AF9A50;
     transition: transform .5s ease-in;
 }
 .ticker-container{
     overflow: hidden;
     border: 1px solid #AF9A50;
     border-radius: 10px;
+    box-shadow: 11px 7px 7px rgba(0, 0, 0, 0.3);
+    background-color: #2c2b25;
 }
 
 .photography-service, .videography-service, .both-service{
@@ -68,7 +77,7 @@ body{
     height: 250px;
     background-color: #181716;
     padding: 20px;
-    border: 1px solid rgba(175, 154,80, 0.5);
+    border: 0.5px solid rgba(175, 154,80, 0.5);
     /*box-shadow: ;*/
 }
 .photography-heading, .videography-heading, .both-heading{
@@ -81,4 +90,10 @@ body{
 .services-gap{
     margin-left: -70px;
     gap: 30px;
+}
+/***************************Work Component*********************/
+
+.gym, .events, .animals, .city{
+    height: 300px;
+    background-color: #2c2b25;
 }
