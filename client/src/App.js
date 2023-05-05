@@ -7,6 +7,7 @@ import Carousel from "./Components/Featured";
 import Services from './Components/Services';
 import Work from "./Components/Work";
 import Reviews from "./Components/Reviews";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Services/>
         <Work/>
         <Reviews/>
+        <Footer/>
     </div>
   );
 }

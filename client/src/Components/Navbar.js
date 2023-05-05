@@ -12,7 +12,7 @@ function Navbar() {
                     </nav>
                 </div>
                 <div className="column shrink">
-                    <button>Sign up</button>
+                    <button className="sign-up-btn">Sign up</button>
                 </div>
             </div>
         </header>
