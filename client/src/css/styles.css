@@ -189,3 +189,8 @@ body{
 .footer-container{
     margin:100px 0 30px 0;
 }
+.logo:hover{
+    transform: scale(1.2);
+    transition: transform .5s ease-in-out;
+    color: white;
+}
