@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import heroImg from '../images/heroImg.jpeg'
+import girlInGym from '../images/girlInGym.jpg'
+import reese from '../images/reese.jpg'
+import railroad from '../images/railroad-tracks.jpg'
+import dumbell from '../images/dumbell.jpg'
+
+
 
 const images = [
     { url: heroImg, alt: 'Image 1' },
-    { url: heroImg, alt: 'Image 2' },
-    { url: heroImg, alt: 'Image 3' },
-    { url: heroImg, alt: 'Image 4' },
-    { url: heroImg, alt: 'Image 5' },
+    { url: girlInGym, alt: 'Image 2' },
+    { url: reese, alt: 'Image 3' },
+    { url: railroad, alt: 'Image 4' },
+    { url: dumbell, alt: 'Image 5' },
 ];
 
 const Featured = () => {

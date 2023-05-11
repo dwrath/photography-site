@@ -7,7 +7,7 @@ function Footer() {
             <div className="row">
                 <div className="column gap-10">
                     <div className="row">
-                        <h3>TTE Media</h3>
+                        <h3 className="footer-title">TTE Media</h3>
                     </div>
                     <div className="row">
                         <div className="logo-container">

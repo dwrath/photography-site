@@ -98,13 +98,23 @@ body{
 .photography-heading, .videography-heading, .both-heading{
     font-size: 20px;
     font-weight: 100;
+    margin: 10px 0;
 }
 .services-spacing{
     margin-top: 30px;
 }
 .services-gap{
     margin-left: -70px;
+    margin-top: 50px;
     gap: 30px;
+}
+.form-link{
+    height: 150px;
+}
+.form-link:hover{
+    transform: scale(1.1);
+    color: white;
+    transition: transform .5s ease-in-out;
 }
 /***************************Work Component*********************/
 
@@ -193,4 +203,8 @@ body{
     transform: scale(1.2);
     transition: transform .5s ease-in-out;
     color: white;
+}
+.footer-title{
+    font-size: 40px;
+    font-weight: 100;
 }

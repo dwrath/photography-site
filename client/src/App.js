@@ -1,27 +1,19 @@
 import './css/resets.css';
 import './css/layout.css';
 import './css/styles.css';
-import Navbar from "./Components/Navbar";
-import HeroScene from "./Components/HeroScene";
-import Carousel from "./Components/Featured";
-import Services from './Components/Services';
-import Work from "./Components/Work";
-import Reviews from "./Components/Reviews";
-import Footer from "./Components/Footer";
+import {Routes, Route} from "react-router-dom";
+import Home from "./Components/Home";
+import Form from "./Components/Form";
+
 
 
 function App() {
-  return (
-    <div className="page-wrapper">
-      <Navbar/>
-        <HeroScene/>
-        <Carousel/>
-      <Services/>
-        <Work/>
-        <Reviews/>
-        <Footer/>
-    </div>
-  );
+    return (
+       <Routes>
+           <Route path="/" element={<Home/>}/>
+           <Route path="/form" element={<Form/>}/>
+       </Routes>
+    );
 }
 
 export default App;
