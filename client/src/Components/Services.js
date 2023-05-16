@@ -57,8 +57,10 @@ const Services = () => {
                                     <div className="row justify-center align-center form-link">
                                         <p><Link to={{
                                             pathname: '/form',
-                                            state: 1
-                                        }}>Click here to go to Form</Link></p>
+                                            state: { number: 1 }
+                                        }}>
+                                            Click here to go to Form
+                                        </Link></p>
                                     </div>
                                 </div>
                             </Tilt>
