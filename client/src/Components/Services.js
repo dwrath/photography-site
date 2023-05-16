@@ -2,6 +2,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from 'react-intersection-observer';
+import {Link} from "react-router-dom";
 
 
 const Services = () => {
@@ -53,6 +54,14 @@ const Services = () => {
                                 <div className="photography-service">
                                     <h1 className="photography-heading">Photography</h1>
                                     <p>Visually stunning photography that captivate your audience</p>
+                                    <div className="row justify-center align-center form-link">
+                                        <p><Link to={{
+                                            pathname: '/form',
+                                            state: { number: 1 }
+                                        }}>
+                                            Click here to go to Form
+                                        </Link></p>
+                                    </div>
                                 </div>
                             </Tilt>
                         </div>
@@ -61,6 +70,12 @@ const Services = () => {
                                 <div className="videography-service">
                                     <h1 className="videography-heading">Videography</h1>
                                     <p>Visually stunning Videography that captivate your audience</p>
+                                    <div className="row justify-center align-center form-link">
+                                        <p><Link to={{
+                                            pathname: '/form',
+                                            state: 2
+                                        }}>Click here to go to Form</Link></p>
+                                    </div>
                                 </div>
                             </Tilt>
                         </div>
@@ -69,6 +84,12 @@ const Services = () => {
                                 <div className="both-service">
                                     <h1 className="both-heading">Photography & Videography</h1>
                                     <p>Visually stunning photography and videography that captivate your audience</p>
+                                    <div className="row justify-center align-center form-link">
+                                    <p><Link to={{
+                                        pathname: '/form',
+                                        state: 1
+                                    }}>Click here to go to Form</Link></p>
+                                    </div>
                                 </div>
                             </Tilt>
                         </div>

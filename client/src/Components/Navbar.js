@@ -1,3 +1,6 @@
+import * as React from "react";
+import { Link } from "react-router-dom";
+import Home from "./Home";
 function Navbar() {
     return(
         <header className="container justify-center nav-overlay">
@@ -5,14 +8,14 @@ function Navbar() {
                 <div className="column shrink logo">TTE Media</div>
                 <div className="column shrink">
                     <nav className="row justify-right">
-                        <div className="column shrink"><a href="#" title="Go Home">Home</a></div>
-                        <div className="column shrink"><a href="#" title="About">About</a></div>
-                        <div className="column shrink"><a href="#" title="Our Team">Our Team</a></div>
-                        <div className="column shrink"><a href="#">Contact</a></div>
+                        <div className="column shrink"><Link to={Home} title="Go Home">Home</Link></div>
+                        <div className="column shrink"><Link to={Home} title="About">About</Link></div>
+                        <div className="column shrink"><Link to={Home} title="Our Team">Our Team</Link></div>
+                        <div className="column shrink"><Link to={Home}>Contact</Link></div>
                     </nav>
                 </div>
                 <div className="column shrink">
-                    <button>Sign up</button>
+                    <button className="sign-up-btn">Sign up</button>
                 </div>
             </div>
         </header>
