@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useLocation} from "react-router-dom";
 import {motion} from "framer-motion";
 import Navbar from "./Navbar";
@@ -12,6 +12,9 @@ const MyForm = (props) => {
     const [email, setEmail] = useState('');
     const [shootLocation, setShootLocation] = useState('');
     const [selectedTime, setSelectedTime] = useState('');
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleTimeChange = (event) => {
         setSelectedTime(event.target.value);
