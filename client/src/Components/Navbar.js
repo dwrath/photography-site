@@ -8,7 +8,7 @@ function Navbar() {
                 <div className="column shrink logo">TTE Media</div>
                 <div className="column shrink">
                     <nav className="row justify-right">
-                        <div className="column shrink"><Link to={Home} title="Go Home">Home</Link></div>
+                        <div className="column shrink"><Link to="/" title="Go Home">Home</Link></div>
                         <div className="column shrink"><Link to={Home} title="About">About</Link></div>
                         <div className="column shrink"><Link to={Home} title="Our Team">Our Team</Link></div>
                         <div className="column shrink"><Link to={Home}>Contact</Link></div>
